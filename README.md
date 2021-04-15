@@ -22,8 +22,15 @@ Please see [Requirements](https://github.com/zarbin/Unit-19---Multi-Blockchain-W
 
 # Test Transactions
 TEST transaction screenshots, as well as the code used to send them.
+
 My Wallet was created successfully and I loaded BTC from Bitcoin testnet3 faucet found here: https://coinfaucet.eu/en/btc-testnet/
-The faucet in the instructions did not work for me.  
+The faucet in the instructions did not work for me. 
+
+Wallet Setup
+![Screenshot](/images/walletsetup.png)
+
+Send Transaction
+![Screenshot](/images/sendtrans.png)
 
 # Instructions
 Write a short description about what the wallet does, what is is built with, and how to use it.
