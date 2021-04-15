@@ -33,14 +33,14 @@ Send Transaction
 ![Screenshot](/images/sendtrans.png)
 
 # Description
-Write a short description about what the wallet does, what is is built with, and how to use it.
-
 I've created a universal wallet for use with digital crypto-assets.  It has the capability to manage bilions of addresses across many hundred of coins.  
 
 The wallet is built with Python 3.7 and a command line tool hd-wallet-derive that facilitates creation of Hierarchical Deterministic wallets.  Speciality libraries are used in the python code including bit, a Python Bitcoin library, and web3, a Python ethereum library.  
 
 Keys can be derived from hd-wallet using a command
+
     $ ./hd-wallet-derive.php --coin=DOGE --gen-key --format=jsonpretty -g
 
 Addresses can be dervived
+
     ./hd-wallet-derive.php --mnemonic="refuse brush romance together undo document tortoise life equal trash sun ask" -g  --numderive=2 --coin=BTC --cols=path,address,privkey,pubkey
