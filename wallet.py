@@ -31,7 +31,7 @@ print(type(mnemonic))
 
 #functions
 
-# derive wallets function that uses hd-wallet-derfie tool
+# derive wallets function that uses hd-wallet-derive tool
 def derive_wallets(mnemonic, coin, numderive):
     command = 'php ./derive -g --mnemonic="' + mnemonic + '" --numderive="' + str(numderive) + '" --cols=path,address,privkey,pubkey --coin="' + coin + '" --format=jsonpretty'
     p = subprocess.Popen(command, stdout=subprocess.PIPE, shell=True)

@@ -32,15 +32,15 @@ Wallet Setup
 Send Transaction
 ![Screenshot](/images/sendtrans.png)
 
-# Instructions
+# Description
 Write a short description about what the wallet does, what is is built with, and how to use it.
 
-### Installing dependencies and environment configuration
-* Download and Install MyCrpto to be used key mangaement and crypto wallet - https://download.mycrypto.com/
-* Install Go Ethereeum Tools - https://geth.ethereum.org/downloads/
+I've created a universal wallet for use with digital crypto-assets.  It has the capability to manage bilions of addresses across many hundred of coins.  
 
-### Start the Network
-    Initialize the nodes
-    
-    Initialize the nodes with the genesis' json file.  This step will initilize the nodes for the zbanknet network after 
+The wallet is built with Python 3.7 and a command line tool hd-wallet-derive that facilitates creation of Hierarchical Deterministic wallets.  Speciality libraries are used in the python code including bit, a Python Bitcoin library, and web3, a Python ethereum library.  
 
+Keys can be derived from hd-wallet using a command
+    $ ./hd-wallet-derive.php --coin=DOGE --gen-key --format=jsonpretty -g
+
+Addresses can be dervived
+    ./hd-wallet-derive.php --mnemonic="refuse brush romance together undo document tortoise life equal trash sun ask" -g  --numderive=2 --coin=BTC --cols=path,address,privkey,pubkey
