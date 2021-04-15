@@ -1,0 +1,35 @@
+The installation of the pip dependencies "bit" and "web3" are as follows:
+$ pip install bit
+
+That command will install bit to be used with python. 
+$ pip list | grep bit
+
+To install web3, the command is as follows:
+$ pip install web3
+
+Similar to the bit library, that command will install web3 to be used with python. 
+$ pip list | grep web3
+
+The installation of hd-wallet-derive are as follows -
+
+For Windows: 
+
+  open terminal
+  git clone https://github.com/dan-da/hd-wallet-derive
+  cd hd-wallet-derive
+  curl https://getcomposer.org/installer -o installer.php
+  php installer.php
+  php composer.phar install
+
+For MacOS:
+
+Run the command brew unlink php@7.3 this unlinks the current version of PHP running on mac.
+Run the command brew upgrade php@7.3 this will update your current version of PHP to the latest version of php7.3.x.
+Run the command brew link php@7.3 --overwrite this will relink the corresponding path and connect the extensions (including gmp).
+
+  open terminal
+  git clone https://github.com/dan-da/hd-wallet-derive
+  cd hd-wallet-derive
+  curl https://getcomposer.org/installer -o installer.php
+  php installer.php
+  php composer.phar install
